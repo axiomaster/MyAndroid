@@ -5,8 +5,16 @@ cmake_minimum_required(VERSION 3.8)
 
 project("droid")
 
-include_directories(../aosp/system/core/include)
-include_directories(../aosp/libnativehelper/include)
+if (NOT WORKSPACE)
+    set(WORKSPACE ./)
+endif ()
+
+if (NOT AOSP)
+    set(AOSP ${WORKSPACE}../aosp)
+endif ()
+
+include_directories(${AOSP}/system/core/include)
+include_directories(${AOSP}/libnativehelper/include)
 include_directories(native/include)
 
 add_subdirectory(frameworks/base/services/core)
