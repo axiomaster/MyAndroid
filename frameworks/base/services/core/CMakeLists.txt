@@ -1,0 +1,1 @@
+add_library(core "com_android_server_input_InputManagerService.cpp")

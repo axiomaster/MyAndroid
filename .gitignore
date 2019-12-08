@@ -1,0 +1,8 @@
+.idea
+.vs
+.vscode
+cmake-build-debug
+CMakeSettings.json
+*.iml
+*.sln
+*.vcxproj*
