@@ -1,12 +1,19 @@
 #include "EventHub.h"
 #include "../../include/InputListener.h"
 #include <utils/threads.h>
+#include <utils/KeyedVector.h>
+#include <input/InputDevice.h>
+#include <vector>
 
 
 #ifndef DROID_INPUTREADER_H
 #define DROID_INPUTREADER_H
 
 namespace android {
+    class InputDevice;
+
+    class InputMapper;
+
     struct DisplayViewport {
 
     };
@@ -18,7 +25,8 @@ namespace android {
     };
 
     class InputReaderPolicyInterface : public virtual RefBase {
-
+    public:
+        virtual void notifyInputDevicesChanged(const std::vector<InputDeviceInfo> &inputDevices) = 0;
     };
 
     class InputReaderInterface : public virtual RefBase {
@@ -44,10 +52,30 @@ namespace android {
 
         virtual void loopOnce();
 
+    protected:
+        virtual InputDevice *createDeviceLocked(int32_t deviceId, int32_t controllerNumber,
+                                                const InputDeviceIdentifier &identifier,
+                                                uint32_t classes);
+
+        class ContextImpl : public InputReaderContext {
+
+        } mContext;
+
     private:
         sp<EventHubInterface> mEventHub;
         sp<InputReaderPolicyInterface> mPolicy;
         sp<QueuedInputListener> mQueuedListener;
+
+        static const int EVENT_BUFFER_SIZE = 256;
+        RawEvent mEventBuffer[EVENT_BUFFER_SIZE];
+
+        KeyedVector<int32_t, InputDevice *> mDevices;
+
+        void processEventsLocked(const RawEvent *rawEvents, size_t count);
+
+        void addDeviceLocked(nsecs_t when, int32_t deviceId);
+
+        int32_t bumpGenerationLocked();
     };
 };
 

@@ -27,13 +27,6 @@ namespace android {
     public:
         explicit InputDispatcher(const sp<InputDispatcherPolicyInterface> &policy);
     };
-
-    class InputDispatcherThread : public Thread {
-    private:
-        virtual bool threadLoop();
-
-        sp<InputDispatcherInterface> mDispatcher;
-    };
 };
 
 #endif

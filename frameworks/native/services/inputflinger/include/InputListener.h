@@ -18,6 +18,8 @@ namespace android {
     class QueuedInputListener : public InputListenerInterface {
     public :
         explicit QueuedInputListener(const sp <InputListenerInterface> &innerListener);
+
+        void flush();
     };
 };
 

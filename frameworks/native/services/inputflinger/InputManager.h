@@ -3,6 +3,11 @@
 #include "dispatcher/InputDispatcher.h"
 #include "InputClassifier.h"
 #include "reader/include/InputReaderThread.h"
+#include "dispatcher/include/InputDispatcherThread.h"
+
+
+#ifndef DROID_INPUTMANAGER_H
+#define DROID_INPUTMANAGER_H
 
 namespace android {
     class InputManagerInterface : public virtual RefBase {
@@ -26,5 +31,9 @@ namespace android {
 
         sp<InputDispatcherInterface> mDispatcher;
         sp<InputDispatcherThread> mDispatcherThread;
+
+        void initialize();
     };
 }
+
+#endif
