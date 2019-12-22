@@ -17,8 +17,8 @@ include_directories(${AOSP}/system/core/include)
 include_directories(${AOSP}/libnativehelper/include)
 include_directories(native/include)
 
-add_subdirectory(frameworks/base/services/core)
-add_subdirectory(native/services/inputflinger)
+add_subdirectory(frameworks/base/services)
+add_subdirectory(frameworks/native)
 
 # 将源代码添加到此项目的可执行文件。
 #add_executable(droid "droid.cpp" "droid.h")

@@ -1,6 +1,10 @@
 #include "EventHub.h"
-#include "InputListener.h"
+#include "../../include/InputListener.h"
 #include <utils/threads.h>
+
+
+#ifndef DROID_INPUTREADER_H
+#define DROID_INPUTREADER_H
 
 namespace android {
     struct DisplayViewport {
@@ -24,6 +28,7 @@ namespace android {
         virtual ~InputReaderInterface() {}
 
     public:
+        virtual void loopOnce() = 0;
     };
 
     class InputReaderContext {
@@ -37,19 +42,13 @@ namespace android {
 
         virtual ~InputReader();
 
+        virtual void loopOnce();
+
     private:
         sp<EventHubInterface> mEventHub;
-    };
-
-    class InputReaderThread : public Thread {
-    public:
-        InputReaderThread(const sp<InputReaderInterface> &reader);
-
-        virtual ~InputReaderThread();
-
-    private:
-        sp<InputReaderInterface> mReader;
-
-        virtual bool threadLoop();
+        sp<InputReaderPolicyInterface> mPolicy;
+        sp<QueuedInputListener> mQueuedListener;
     };
 };
+
+#endif
