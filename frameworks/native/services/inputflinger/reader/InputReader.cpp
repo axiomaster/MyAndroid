@@ -2,7 +2,10 @@
 // Created by lism on 2019/12/22.
 //
 
+#include <android/input.h>
 #include "include/InputReader.h"
+#include "include/InputDevice.h"
+#include "mapper/KeyboardInputMapper.h"
 
 namespace android {
     InputReader::InputReader(const sp<EventHubInterface> &eventHub, const sp<InputReaderPolicyInterface> &policy,
@@ -41,6 +44,7 @@ namespace android {
                     }
                     batchSize += 1;
                 }
+                processEventsForDeviceLocked(deviceId, rawEvent, batchSize);
             } else {
                 switch (rawEvent->type) {
                     case EventHubInterface::DEVICE_ADDED:
@@ -83,5 +87,11 @@ namespace android {
         if (keyboardSource != 0) {
             device->addMapper(new KeyboardInputMapper(device, keyboardSource, keyboardType));
         }
+    }
+
+    void InputReader::processEventsForDeviceLocked(int32_t deviceId, const RawEvent *rawEvents, size_t count) {
+        size_t deviceIndex = mDevices.indexOfKey(deviceId);
+        InputDevice *device = mDevices.valueAt(deviceIndex);
+        device->process(rawEvents, count);
     }
 }

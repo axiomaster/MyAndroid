@@ -13,8 +13,13 @@ namespace android {
     public:
         explicit InputMapper(InputDevice *device);
 
+        inline InputListenerInterface *getListener() { return mContext->getListener(); }
+
+        virtual void process(const RawEvent *rawEvent) = 0;
+
     protected:
         InputDevice *mDevice;
+        InputReaderContext *mContext;
     };
 }
 
