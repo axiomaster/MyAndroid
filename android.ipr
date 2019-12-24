@@ -3,19 +3,10 @@
   <component name="AndroidDexCompilerConfiguration">
     <option name="MAX_HEAP_SIZE" value="8192" />
   </component>
-  <component name="AntConfiguration">
-    <defaultAnt bundledAnt="true" />
-    <buildFile url="file://$PROJECT_DIR$/ide/intellij/build.xml">
-      <additionalClassPath />
-      <antReference projectDefault="true" />
-      <customJdkName value="" />
-      <maximumHeapSize value="128" />
-      <properties />
-    </buildFile>
-  </component>
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CodeStyleProjectProfileManger">
     <option name="PROJECT_PROFILE" />
     <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
@@ -333,7 +324,6 @@
                     <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
                   </AND>
                 </match>
-                <order>ANDROID_ATTRIBUTE_ORDER</order>
               </rule>
             </section>
             <section>
@@ -358,9 +348,7 @@
       <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file:///tmp/intellij/home/lism/Android/android/classes" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="11" project-jdk-type="JavaSDK" />
   <component name="RmicSettings">
     <option name="IS_EANABLED" value="false" />
     <option name="DEBUGGING_INFO" value="true" />

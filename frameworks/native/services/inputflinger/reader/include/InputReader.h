@@ -75,6 +75,9 @@ namespace android {
 
         void addDeviceLocked(nsecs_t when, int32_t deviceId);
 
+        void processEventsForDeviceLocked(int32_t deviceId, const RawEvent *rawEvents, size_t count);
+
+
         int32_t bumpGenerationLocked();
     };
 };

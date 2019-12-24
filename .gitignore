@@ -1,8 +1,10 @@
+android.iws
 .idea
 .vs
 .vscode
 cmake-build-debug
 CMakeSettings.json
+gen
 *.iml
 *.sln
 *.vcxproj*

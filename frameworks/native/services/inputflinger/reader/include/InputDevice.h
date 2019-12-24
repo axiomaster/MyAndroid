@@ -22,6 +22,10 @@ namespace android {
 
         inline bool isIgnored() { return mMappers.empty(); }
 
+        void addMapper(InputMapper *mapper);
+
+        void process(const RawEvent *rawEvents, size_t count);
+
     private:
         std::vector<InputMapper *> mMappers;
     };
