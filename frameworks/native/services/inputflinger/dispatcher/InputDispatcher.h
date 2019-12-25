@@ -5,10 +5,8 @@
 #include "../include/InputListener.h"
 #include "include/InputDispatcherPolicyInterface.h"
 #include "include/InputDispatcherInterface.h"
-<<<<<<< HEAD
+
 #include "Entry.h"
-=======
->>>>>>> 17d5b6cca3f37c762cbc7b8729af38048880cad3
 
 
 #ifndef DROID_INPUTDISPATCHER_H
@@ -31,15 +29,13 @@ namespace android {
         virtual void dispatchOnce() override;
 
         virtual void notifyKey(const NotifyKeyArgs *args) override;
-<<<<<<< HEAD
+
 
     private:
         std::mutex mLock;
         sp<Looper> mLooper;
 
         bool enqueueInboundEventLocked(EventEntry *entry) REQUIRES(mLock);
-=======
->>>>>>> 17d5b6cca3f37c762cbc7b8729af38048880cad3
     };
 };
 

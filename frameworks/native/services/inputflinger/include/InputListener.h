@@ -6,6 +6,7 @@
 #define DROID_INPUTLISTENER_H
 
 #include <utils/RefBase.h>
+#include <vector>
 
 namespace android {
     class InputListenerInterface;
