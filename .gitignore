@@ -5,6 +5,5 @@ android.iws
 cmake-build-debug
 CMakeSettings.json
 gen
-*.iml
 *.sln
 *.vcxproj*
