@@ -1,6 +1,7 @@
-package com.droid.server.input;
+package com.android.server.input;
 
-import droid.hardware.input.IInputManager;
+import android.hardware.input.IInputManager;
 
 public class InputManagerService extends IInputManager.Stub {
+
 }
