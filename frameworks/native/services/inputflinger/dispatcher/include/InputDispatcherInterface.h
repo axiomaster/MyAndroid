@@ -9,6 +9,10 @@
 #include "../../include/InputListener.h"
 
 namespace android {
+    enum {
+        INPUT_EVENT_INJECTION_SUCCEEDED = 0,
+    };
+
     class InputDispatcherInterface : public virtual RefBase, public InputListenerInterface {
     public:
         virtual void dispatchOnce() = 0;
