@@ -6,11 +6,13 @@
 #define ANDROID_INPUTTRANSPORT_H
 
 #include <utils/RefBase.h>
-#include <binder/IBinder.h>
+#include "../binder/IBinder.h"
 
 namespace android {
     class InputChannel : public RefBase {
     public:
+        static status_t openInputChannelPair(const std::string &name, sp<InputChannel> &outServerChannel, sp<InputChannel> &outClientChannel);
+
         sp<IBinder> getToken() const;
     };
 
