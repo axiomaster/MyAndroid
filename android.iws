@@ -24,99 +24,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/services/core/java/com/android/server/input/InputManagerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="163" column="29" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/core/java/android/view/WindowManagerGlobal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="366" column="43" selection-start-line="366" selection-start-column="43" selection-end-line="366" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/core/java/android/view/ViewRootImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="887" column="48" selection-start-line="887" selection-start-column="48" selection-end-line="887" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="1459" column="32" lean-forward="true" selection-start-line="1459" selection-start-column="32" selection-end-line="1459" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/services/core/java/com/android/server/wm/DisplayContent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="4952" column="17" selection-start-line="4952" selection-start-column="17" selection-end-line="4952" selection-end-column="17" />
-              <folding>
-                <element signature="e#215005#215006#0" expanded="true" />
-                <element signature="e#215041#215042#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/services/core/java/com/android/server/wm/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="158" column="29" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/services/core/java/com/android/server/wm/WindowState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="2201" column="47" lean-forward="true" selection-start-line="2201" selection-start-column="47" selection-end-line="2201" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/base/core/java/android/view/InputChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -151,17 +59,6 @@
   </component>
   <component name="ProjectId" id="1VZTFk1N6HBCrZZaGtzNyg9YKHO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -180,19 +77,7 @@
       <recent name="$PROJECT_DIR$/frameworks/base/services/core/java" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.core">
     <configuration name="core" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="droid" TARGET_NAME="core" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -203,6 +88,10 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.core" />
+      <item itemvalue="CMake Application.inputflinger" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -226,16 +115,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577378031381</updated>
-      <workItem from="1577459518546" duration="2938000" />
+      <workItem from="1577459518546" duration="3871000" />
     </task>
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1746" y="27" width="1694" height="1413" extended-state="5" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Captures" order="0" weight="0.25" />
-    </layout>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.java" />

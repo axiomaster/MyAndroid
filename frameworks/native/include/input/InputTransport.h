@@ -20,6 +20,10 @@ namespace android {
     public:
         status_t publishKeyEvent(uint32_t seq, int32_t deviceId);
     };
+
+    class InputConsumer {
+
+    };
 }
 
 #endif //ANDROID_INPUTTRANSPORT_H
