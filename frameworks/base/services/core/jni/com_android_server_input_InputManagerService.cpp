@@ -37,7 +37,7 @@ namespace android {
     }
 
     status_t NativeInputManager::registerInputChannel(JNIEnv *, const sp<InputChannel> &inputChannel, int32_t displayId) {
-
+        return mInputManager->getDispatcher()->registerInputChannel(inputChannel, displayId);
     }
 
     static jlong nativeInit(JNIEnv *env, jclass, jobject serviceObj, jobject contextObj, jobject messageQueueObj) {

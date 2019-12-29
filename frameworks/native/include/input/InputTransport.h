@@ -14,6 +14,11 @@ namespace android {
         static status_t openInputChannelPair(const std::string &name, sp<InputChannel> &outServerChannel, sp<InputChannel> &outClientChannel);
 
         sp<IBinder> getToken() const;
+
+        inline int getFd() const { return mFd };
+
+    private:
+        int mFd = -1;
     };
 
     class InputPublisher {

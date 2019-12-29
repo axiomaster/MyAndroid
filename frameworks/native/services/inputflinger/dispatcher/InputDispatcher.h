@@ -8,11 +8,11 @@
 #include "include/InputDispatcherInterface.h"
 
 #include <unordered_map>
-#include <input/InputWindow.h>
-#include <input/InputApplication.h>
 #include "Queue.h"
 #include "Entry.h"
 #include "Connection.h"
+#include "../../../include/input/InputWindow.h"
+#include "../../../include/input/InputApplication.h"
 
 
 #ifndef DROID_INPUTDISPATCHER_H
@@ -45,6 +45,8 @@ namespace android {
         virtual void dispatchOnce() override;
 
         virtual void notifyKey(const NotifyKeyArgs *args) override;
+
+        status_t registerInputChannel(const sp<InputChannel> &inputChannel, int32_t displayId) override;
 
 
     private:
@@ -108,6 +110,8 @@ namespace android {
                                         int32_t dispatchMode) REQUIRES(mLock);
 
         void startDispatchCycleLocked(nsecs_t currentTime, const sp<Connection> &connection)        REQUIRES(mLock);
+
+        static int handleReceiveCallback(int fd, int events, void *data);
     };
 };
 

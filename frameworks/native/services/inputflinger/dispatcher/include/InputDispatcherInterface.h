@@ -16,6 +16,8 @@ namespace android {
     class InputDispatcherInterface : public virtual RefBase, public InputListenerInterface {
     public:
         virtual void dispatchOnce() = 0;
+
+        virtual status_t registerInputChannel(const sp <InputChannel> &inputChannel, int32_t displayId) = 0;
     };
 }
 

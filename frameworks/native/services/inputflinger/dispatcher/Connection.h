@@ -6,18 +6,19 @@
 #define ANDROID_CONNECTION_H
 
 #include <utils/RefBase.h>
-#include <input/InputTransport.h>
 #include "Queue.h"
 #include "Entry.h"
 
 namespace android {
     class Connection : public RefBase {
     public:
-        sp<InputChannel> inputChannel;
+        sp <InputChannel> inputChannel;
 
-        Queue<DispatchEntry> outboundQueue;
+        Queue <DispatchEntry> outboundQueue;
 
         InputPublisher inputPublisher;
+
+        explicit Connection(const sp <InputChannel> &inputChannel, bool monitor);
     };
 }
 

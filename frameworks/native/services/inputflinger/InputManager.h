@@ -11,7 +11,8 @@
 
 namespace android {
     class InputManagerInterface : public virtual RefBase {
-
+    public:
+        virtual sp<InputDispatcherInterface> getDispatcher() = 0;
     };
 
     class InputManager : public InputManagerInterface {
@@ -22,6 +23,8 @@ namespace android {
         InputManager(const sp<InputReaderPolicyInterface> &readerPolicy, const sp<InputDispatcherPolicyInterface> &dispatcherPolicy);
 
         virtual status_t start();
+
+        sp<InputDispatcherInterface> getDispatcher() override;
 
     private:
         sp<InputReaderInterface> mReader;

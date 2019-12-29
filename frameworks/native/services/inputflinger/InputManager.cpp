@@ -25,4 +25,8 @@ namespace android {
         mReaderThread = new InputReaderThread(mReader);
         mDispatcherThread = new InputDispatcherThread(mDispatcher);
     }
+
+    sp<InputDispatcherInterface> InputManager::getDispatcher() {
+        return mDispatcher;
+    }
 };

@@ -5,6 +5,7 @@
 
 #include <input/Input.h>
 #include <input/InputTransport.h>
+#include <android/looper.h>
 #include "InputDispatcher.h"
 #include "Entry.h"
 #include "Connection.h"
@@ -208,5 +209,20 @@ namespace android {
             return nullptr;
         }
         return mInputChannelsByToken.at(token);
+    }
+
+    status_t InputDispatcher::registerInputChannel(const sp<InputChannel> &inputChannel, int32_t displayId) {
+        {
+            sp<Connection> connection = new Connection(inputChannel, false);
+
+            int fd = inputChannel->getFd();
+            mConnectionsByFd.add(fd, connection);
+            mInputChannelsByToken[inputChannel->getToken()] = inputChannel;
+
+            mLooper->addFd(fd, 0, ALOOPER_EVENT_INPUT, handleReceiveCallback, this);
+        }
+
+        mLooper->wake();
+        return 0;
     }
 }
