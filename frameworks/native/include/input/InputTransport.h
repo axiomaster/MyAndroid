@@ -11,6 +11,10 @@
 namespace android {
     class InputChannel : public RefBase {
     public:
+        InputChannel() = default;
+
+        InputChannel(const std::string &name, int fd);
+
         static status_t openInputChannelPair(const std::string &name, sp<InputChannel> &outServerChannel, sp<InputChannel> &outClientChannel);
 
         sp<IBinder> getToken() const;
@@ -19,6 +23,9 @@ namespace android {
 
     private:
         int mFd = -1;
+        std::string mName;
+
+        void setFd(int fd);
     };
 
     class InputPublisher {
