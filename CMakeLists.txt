@@ -19,6 +19,7 @@ include_directories(native/include)
 
 add_subdirectory(frameworks/base/services)
 add_subdirectory(frameworks/native)
+add_subdirectory(system/core/libutils)
 
 # 将源代码添加到此项目的可执行文件。
 #add_executable(droid "droid.cpp" "droid.h")

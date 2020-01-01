@@ -11,13 +11,19 @@
 namespace android {
     class MessageQueue : public virtual RefBase {
     public:
-        inline sp<Looper> getLooper() const {
+        inline sp <Looper> getLooper() const {
             return mLooper;
         }
 
     protected:
-        sp<Looper> mLooper;
+        MessageQueue();
+
+        virtual ~MessageQueue();
+
+        sp <Looper> mLooper;
     };
+
+    extern sp <MessageQueue> android_os_MessageQueue_getMessageQueue(JNIEnv *env, jobject messageQueueObj);
 }
 
 #endif //DROID_ANDROID_OS_MESSAGEQUEUE_H
