@@ -28,6 +28,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -67,7 +68,7 @@
       <recent name="$PROJECT_DIR$/frameworks/base/services/core/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.core">
     <configuration name="core" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="droid" TARGET_NAME="core" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -112,7 +113,7 @@
       <workItem from="1577855282728" duration="125000" />
       <workItem from="1577855431190" duration="2798000" />
       <workItem from="1577877559730" duration="1580000" />
-      <workItem from="1577879152756" duration="1229000" />
+      <workItem from="1577879152756" duration="1944000" />
     </task>
     <servers />
   </component>
