@@ -2,9 +2,15 @@
 // Created by lism on 2020/1/1.
 //
 
-#include <utils/Looper.h>
+
+#include <cstdint>
+#include <climits>
+#include "include/utils/Looper.h"
 
 namespace android {
+
+    static const int EPOLL_MAX_EVENTS = 16;
+
     Looper::Looper(bool allowNonCallbacks) : mAllowNonCallbacks(allowNonCallbacks) {
 
     }
@@ -17,6 +23,10 @@ namespace android {
     }
 
     int Looper::pollInner(int timeoutMillis) {
+        if (timeoutMillis != 0 && mNextMessageUptime != LLONG_MAX) {
+            nsecs_t now = systemTime(SYSTEM_TIME_MONOTONIC);
+        }
+
         int result = POLL_WAKE;
 
         struct epoll_event eventItems[EPOLL_MAX_EVENTS];
@@ -26,17 +36,19 @@ namespace android {
             int fd = eventItems[i].data.fd;
             uint32_t epollEvents = eventItems[i].events;
 
-            if (fd = mWakeReadPipeFd) {
+            if (fd == mWakeEventFd.get()) {
                 if (epollEvents & EPOLLIN) {
                     awoken();
                 }
+            } else {
+                ssize_t requestIndex;
             }
         }
 
         return result;
     }
 
-    int Looper::awoken() {
+    void Looper::awoken() {
 
     }
 }

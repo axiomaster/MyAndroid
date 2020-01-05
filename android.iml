@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module relativePaths="true" type="JAVA_MODULE" version="4">
+<module classpath="CMake" relativePaths="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration />
     </facet>
-  </component>
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/frameworks">
-      <sourceFolder url="file://$MODULE_DIR$/frameworks/base/core/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/frameworks/base/services/core/java" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/framework.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>

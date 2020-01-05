@@ -1,3 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
 
-add_library(utils Looper.cpp)
+include_directories(include)
+
+add_library(utils Looper.cpp include/utils/Looper.h)

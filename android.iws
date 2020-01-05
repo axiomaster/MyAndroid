@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -61,7 +66,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.170347" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -84,6 +90,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.core" />
+      <item itemvalue="CMake Application.inputflinger" />
+      <item itemvalue="CMake Application.utils" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -114,6 +125,8 @@
       <workItem from="1577855431190" duration="2798000" />
       <workItem from="1577877559730" duration="1580000" />
       <workItem from="1577879152756" duration="1944000" />
+      <workItem from="1578110551095" duration="620000" />
+      <workItem from="1578235817000" duration="3546000" />
     </task>
     <servers />
   </component>
@@ -147,6 +160,10 @@
     </state>
     <state x="2417" y="625" width="302" height="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.3440.1413@0.27.3440.1413" timestamp="1577877577721" />
     <state x="2432" y="625" width="302" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/52.27.3388.1413@52.27.3388.1413" timestamp="1577855308961" />
+    <state x="2449" y="461" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578110559586">
+      <screen x="0" y="27" width="3440" height="1413" />
+    </state>
+    <state x="2449" y="461" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.3440.1413@0.27.3440.1413" timestamp="1578110559586" />
     <state x="2313" y="480" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577878039549">
       <screen x="0" y="27" width="3440" height="1413" />
     </state>

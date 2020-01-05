@@ -37,7 +37,6 @@ namespace android {
         mLooper->pollOnce(timeoutMillis);
         mPollObj = nullptr;
         mPollEnv = nullptr;
-
     }
 
     // ----------------------------------------------------------------------------
